@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for the IIMB fest</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/IIMB-Logo.png" alt="iimb logo" height="40" />
+      <h1>IIMB FEST 2026</h1>
+      <p>Welcome to the best fest in town! Have a great time!</p>
+      <nav>
+        <a href="./home.html">Click here to return to Home Page</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Register for the Fest</h2>
+        <form action="/register">
+          <label for="1">Enter Your Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="1"
+            required
+            minlength="2"
+            maxlength="12"
+          />
+          <br />
+          <br />
+          <label for="2">Enter Your Email:</label>
+          <input type="email" name="email" id="2" required /> <br />
+          <br />
+          <label for="3">Enter Your Age:</label>
+          <input type="number" name="age" id="3" required /> <br />
+          <br />
+          <label for="4">Gender:</label>
+          <input type="radio" name="gender" value="male" id="4" required /> Male
+          <input type="radio" name="gender" value="female" id="5" required />
+          Female
+          <br />
+          <br />
+          <label for="6">T-shirt Size:</label>
+          <select name="t-shirt_size" id="6">
+            <option value="">Select T-shirt size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <br /><br />
+          <label for="7">I agree to the terms and conditions</label>
+          <input type="checkbox" name="terms" id="7" required /> <br /><br />
+          <input type="reset" value="Reset Form" />
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
